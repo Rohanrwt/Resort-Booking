@@ -95,8 +95,12 @@ button {
   font-weight: bold;
 }
 
-@media (max-width: 720px) {
-  .cards {flex-direction: column;}
-  .booking form {flex-direction: column; align-items: stretch;}
-  .booking button {width:100%}
+@media (max-width: 520px) {
+  .top .left { font-size: 16px; }
+  .top .right { font-size: 13px; width: 100%; text-align: left; } /* contact below title */
+  .card { flex: 1 1 100%; }           /* cards become full width */
+  .image-box { height: 110px; }
+  .booking input[type="date"] { width: 100%; } /* inputs full width */
+  .booking button { width: 100%; }            /* button full width */
+  .booking form { padding: 12px; gap: 8px; }
 }
